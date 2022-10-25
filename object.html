@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+    <script>
+        function displayObject() {
+          const person = {
+            firstName: "xyz",
+            lastName: "abc",
+            age: 33,
+          }
+            document.getElementById("objId").innerHTML =
+          "Name : " + person.fullName() + "age : " + person.age;
+
+
+      //       fullName: function () {
+      //         return this.firstName + " " + this["lastName"];
+      //       },
+      //     };
+      //   }
+
+      //   function displayObject() {
+      //     const person = {
+      //       firstName: "xyz",
+      //       lastName: "abc",
+      //       age: 33,
+      //       fullName: function () {
+      //         return this.firstName + " " + this["lastName"];
+      //       },
+      //     };
+      //   }
+      //   document.getElementById("objId").innerHTML =
+      //     "Name : " + person.fullName() + "age : " + person.age;
+        function onTexBoxValueChange() {
+          console.log("on change event called");
+          document.getElementById("objId").innerHTML =
+            document.getElementById("name").value;
+        }
+        function onTexBoxValueChange() {
+          console.log("on change event called");
+          document.getElementById("objId").innerHTML =
+            document.getElementById("name").value;
+        }
+    </script>
+  </head>
+  <body>
+    <p id="objId"></p>
+
+    <button onclick="displayObject()">show object</button>
+
+    <!-- 
+    <input id="name" type="text" onkeypress="onTexBoxKeyPess()" onchange="onTexBoxValueChange()" placeholder="enter your name"/>
+
+    <button onclick="displayObject()">show object</button> 
+
+     <script>
+let car = {
+    name: "bmw",
+    model: 220,
+    colour: "red"
+};
+console.log(car.name)
+console.log(car.model)
+console.log(car.colour)
+
+
+    </script> -->
+  </body>
+</html>

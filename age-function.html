@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age-function</title>
+    <script>
+        function checkMyEligbility(){
+            let ageEliment = document.getElementById("ageId");
+            let messageElement= document.getElementById("message");
+            messageElement.style.border = "yellow solid 2px";
+            messageElement.innerHTML = 
+            ageEliment.value >170 ? "invalid input"
+            :
+            
+            ageEliment.value>=18 ? "you can vote" :"too young";
+
+
+
+            ageEliment.value >170 ? "yellow" :
+             ageEliment.value >= 18
+            ?"green" : "red";
+        }
+
+        function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit - 32);
+}
+function btnConvertToCelcius(){
+    let tempElement = document.getElementById("tempId")
+document.getElementById("demo").innerHTML = toCelsius(tempElement.value);
+    
+}
+    </script>
+</head>
+<body>
+    <input id="ageId" type="number" placeholder="enter your age">
+    <button onclick="checkMyEligbility()"> vote</button>
+    <p id="message"></p>
+
+
+
+    <input id="tempId" type="number" placeholder="enter your tempin fehrenheite">
+    <button onclick="btnConvertToCelcius()"> cnvert to degree cel</button>
+    <p id="demo"></p>
+
+</body>
+</html>

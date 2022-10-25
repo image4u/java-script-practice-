@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new str</title>
+    <script>
+        const makeNewString = (str) =>
+        str.length < 3 ? str : str.slice(0, 3) + str.slice(-3);
+
+        console.log(makeNewString('abc'));
+        console.log(makeNewString('abcxyzlmn1'));
+    </script>
+</head>
+<body>
+    <p>making new string by slicing </p>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+</head>
+<body>
+<!-- <input id="nameId" type="text" placeholder="eneter your name">
+<button onclick="getNameLength()">get the name length</button> -->
+<input id="txt1" type="text">
+<!-- <button onclick="sliceTextBoxValue()">slice</button>
+<p id="display1"></p> -->
+
+<button onclick="toUpperCase()">uppercase</button>
+<p id="display1"></p>
+
+<p id="display2"></p>
+
+
+<p id="demo"></p>
+
+
+<p id="demo1"></p>
+
+<script>
+// var text = "HELLO WORLD";
+
+// document.getElementById("demo1").innerHTML = text.charCodeAt(2);
+// console.log(text[5], text[2])
+
+
+let text8 = "a,b,c,d,e,f,";
+let text8Array = text8.split(',');
+console.log("converted array is",  text8Array , typeof text8, typeof text8Array )
+
+
+let text7= "hi world"
+let text7Array = text7.split(',');
+console.log(text7Array, typeof text7, typeof text7Array)
+
+</script>
+
+<script>
+let numb = 7;
+let text5 = numb.toString();
+let padded = text5.padStart(4,0);
+document.getElementById("demo").innerHTML = (padded);
+console.log("after padding stat ::", padded)
+</script>
+
+
+
+<!-- <script>
+  function toUpperCase(){ 
+    let txt1value =document.getElementById("txt1").value
+    document.getElementById("display1").innerHTML = txt1value.toUpperCase();
+  }
+  let text = "Microsoft Please Microsoft visit Microsoft!";
+let newText = text.toUpperCase(/Microsoft/g, "nadeem");
+console.log(newText)
+
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1.concat(" ", text2);
+console.log(text3)
+
+</script>
+ -->
+
+
+
+
+
+<!-- <p id="demo"></p>
+
+<script>
+  let str = "Apple, Banana, Kiwi";
+  console.log(str.length)
+  document.getElementById("demo").innerHTML = str.slice(-12,-6); 
+  
+  </script>        -->
+
+
+
+  
+</body>
+</html>

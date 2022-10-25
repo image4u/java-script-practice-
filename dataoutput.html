@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different data display</title>
+</head>
+<body>
+    <p id="data-demo"></p>
+    <script>
+       
+    //    window.alert(8+9);
+        // document.getElementById("data-demo").innerHTML=4+5;
+        // document.write(5+6);
+    </script>
+      <!-- <button onclick='document.getElementById("data-demo").innerHTML=4+5';> click here</button>" -->
+    <!-- <button onclick="window.alert(8+9);" > click</button> -->
+
+    <!-- <button onclick='console.log(9+9)'> click here</button> -->
+    
+    <br><br><br><br><br><br>
+    
+    <button onclick="myFunction()"> click me1</button>
+    <button onclick="myFunction2()"> click me2</button><br><br>
+
+<script> 
+function myFunction(){
+var a, b, c;
+a = 4;
+b = 5;
+c = add(a, b);
+console.log("the sum first number is", c, a, b);
+   
+document.getElementById("data-demo").innerHTML ="First Number is "+a+" <br> Second Nuber is "+b+" <br> Sum is "+c+"";
+"The value of c is: " + c;
+
+}
+
+function add(a, b){
+    return a + b;
+}
+function myFunction2(){
+var x, y, z;
+x = 46;
+y = 55;
+z = add(x, y);
+console.log("the sum first number is", z, x, y);
+   
+document.getElementById("data-demo").innerHTML ="First Number is "+x+" <br> Second Nuber is "+y+" <br> Sum is "+z+"";
+"The value of z is: " + z;
+}
+</script>
+
+</body>
+</html>

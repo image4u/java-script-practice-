@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const formatDate = (date = new Date()) =>{
+            const days = date.getDate() +1;
+            const months = date.getMonth() +1;
+            const years = date.getFullYear();
+            return `${days}/ ${months}/ ${years}`;
+
+            
+        }
+        console.log(formatDate())
+    </script>
+</head>
+<body>
+    <p>this is the example of date days of js</p>
+</body>
+</html>
